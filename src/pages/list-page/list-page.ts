@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the ListPage page.
@@ -14,7 +14,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListPage {
   cherish: string;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
+    // this.presentToast();
+  }
+
+  presentToast() {
+    let toast = this.toastCtrl.create({
+      message: "您的套套已添加进购物车",
+      duration: 1500,
+      position: 'bottom',
+      // showCloseButton: true,
+    });
+    toast.onDidDismiss(() => {
+      console.log("toast dismissed");
+    });
+    toast.present();
   }
 
   ionViewDidLoad() {

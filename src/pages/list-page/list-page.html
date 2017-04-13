@@ -13,9 +13,9 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content no-padding>
   <ion-list>
-    <ion-list-header>header</ion-list-header>
+    <ion-list-header>first</ion-list-header>
     <ion-item>
       <ion-label>usa</ion-label>
       <ion-input type="text" [(ngModel)]="cherish" placeholder="type something" clearInput="true"></ion-input>
@@ -29,29 +29,37 @@
         <img src="imgs/pink.jpg" alt="">
       </ion-avatar>
       <h1>pink</h1>
-      <p>do love pink?</p>
+      <button ion-button><p style="color:indianred;">do love pink?</p></button>
     </ion-item>
   </ion-list>
   <ion-list>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar>
-          <img src="imgs/pink.jpg" alt="">
-        </ion-avatar>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button>
-          <ion-icon name="call">call</ion-icon>
-        </button>
-        <button ion-button>
-          <ion-icon name="text">call</ion-icon>
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button>
-          <ion-icon name="mail">mail</ion-icon>
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
+    <ion-list-header>second</ion-list-header>
+    <!--<ion-item>-->
+      <ion-item-sliding>
+        <ion-item>
+          <ion-avatar item-left>
+            <img src="imgs/durex.jpg" alt="">
+          </ion-avatar>
+        </ion-item>
+        <ion-item-options side="left">
+          <button ion-button>
+            <ion-icon name="call">call</ion-icon>
+          </button>
+          <button ion-button>
+            <ion-icon name="text">text</ion-icon>
+          </button>
+        </ion-item-options>
+        <ion-item-options side="right">
+          <button ion-button (click)="presentToast()">
+            <ion-icon name="cart"><span style="margin-left: 8px;">Add To Cart</span></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    <!--</ion-item>-->
   </ion-list>
+  <ion-item-group>
+    <ion-item-divider>breaking new</ion-item-divider>
+    <ion-item>heat not to playoffs</ion-item>
+    <ion-item>bulls goes into playoffs</ion-item>
+  </ion-item-group>
 </ion-content>

@@ -39292,7 +39292,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Version */]
 /* unused harmony reexport isActivatable */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_158__components_toast_toast__ = __webpack_require__(203);
 /* unused harmony reexport Toast */
-/* unused harmony reexport ToastController */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_26__components_toast_toast_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_159__components_toggle_toggle__ = __webpack_require__(205);
 /* unused harmony reexport Toggle */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_160__components_toolbar_toolbar_base__ = __webpack_require__(94);
@@ -39317,7 +39317,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Version */]
 /* unused harmony reexport setupConfig */
 /* unused harmony reexport ConfigToken */
 /* unused harmony reexport DomController */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_22__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_22__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* unused harmony reexport Haptic */
 /* unused harmony reexport DeepLinker */
@@ -56623,10 +56623,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * on Ionic pages and navigation.
  */
 var ListPage = (function () {
-    function ListPage(navCtrl, navParams) {
+    function ListPage(navCtrl, navParams, toastCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.toastCtrl = toastCtrl;
+        // this.presentToast();
     }
+    ListPage.prototype.presentToast = function () {
+        var toast = this.toastCtrl.create({
+            message: "您的套套已添加进购物车",
+            duration: 1500,
+            position: 'bottom',
+        });
+        toast.onDidDismiss(function () {
+            console.log("toast dismissed");
+        });
+        toast.present();
+    };
     ListPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ListPage');
     };
@@ -56635,11 +56648,12 @@ var ListPage = (function () {
 ListPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-list-page',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/'<!--\n  Generated template for the ListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>listPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-list-header>header</ion-list-header>\n    <ion-item>\n      <ion-label>usa</ion-label>\n      <ion-input type="text" [(ngModel)]="cherish" placeholder="type something" clearInput="true"></ion-input>\n    </ion-item>\n    <ion-item>{{cherish}}</ion-item>\n    <ion-item>\n      <ion-input type="number" max="50" min="0" step="5" value="0"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-avatar item-left>\n        <img src="imgs/pink.jpg" alt="">\n      </ion-avatar>\n      <h1>pink</h1>\n      <p>do love pink?</p>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-item-sliding>\n      <ion-item>\n        <ion-avatar>\n          <img src="imgs/pink.jpg" alt="">\n        </ion-avatar>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button>\n          <ion-icon name="call">call</ion-icon>\n        </button>\n        <button ion-button>\n          <ion-icon name="text">call</ion-icon>\n        </button>\n      </ion-item-options>\n      <ion-item-options side="right">\n        <button ion-button>\n          <ion-icon name="mail">mail</ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/,
+        selector: 'page-list-page',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/'<!--\n  Generated template for the ListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>listPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n  <ion-list>\n    <ion-list-header>first</ion-list-header>\n    <ion-item>\n      <ion-label>usa</ion-label>\n      <ion-input type="text" [(ngModel)]="cherish" placeholder="type something" clearInput="true"></ion-input>\n    </ion-item>\n    <ion-item>{{cherish}}</ion-item>\n    <ion-item>\n      <ion-input type="number" max="50" min="0" step="5" value="0"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-avatar item-left>\n        <img src="imgs/pink.jpg" alt="">\n      </ion-avatar>\n      <h1>pink</h1>\n      <button ion-button><p style="color:indianred;">do love pink?</p></button>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header>second</ion-list-header>\n    <!--<ion-item>-->\n      <ion-item-sliding>\n        <ion-item>\n          <ion-avatar item-left>\n            <img src="imgs/durex.jpg" alt="">\n          </ion-avatar>\n        </ion-item>\n        <ion-item-options side="left">\n          <button ion-button>\n            <ion-icon name="call">call</ion-icon>\n          </button>\n          <button ion-button>\n            <ion-icon name="text">text</ion-icon>\n          </button>\n        </ion-item-options>\n        <ion-item-options side="right">\n          <button ion-button (click)="presentToast()">\n            <ion-icon name="cart"><span style="margin-left: 8px;">Add To Cart</span></ion-icon>\n          </button>\n        </ion-item-options>\n      </ion-item-sliding>\n    <!--</ion-item>-->\n  </ion-list>\n  <ion-item-group>\n    <ion-item-divider>breaking new</ion-item-divider>\n    <ion-item>heat not to playoffs</ion-item>\n    <ion-item>bulls goes into playoffs</ion-item>\n  </ion-item-group>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ToastController */]) === "function" && _c || Object])
 ], ListPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=list-page.js.map
 
 /***/ }),
@@ -104648,7 +104662,7 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
