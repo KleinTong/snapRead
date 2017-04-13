@@ -1,0 +1,57 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>listPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>header</ion-list-header>
+    <ion-item>
+      <ion-label>usa</ion-label>
+      <ion-input type="text" [(ngModel)]="cherish" placeholder="type something" clearInput="true"></ion-input>
+    </ion-item>
+    <ion-item>{{cherish}}</ion-item>
+    <ion-item>
+      <ion-input type="number" max="50" min="0" step="5" value="0"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="imgs/pink.jpg" alt="">
+      </ion-avatar>
+      <h1>pink</h1>
+      <p>do love pink?</p>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar>
+          <img src="imgs/pink.jpg" alt="">
+        </ion-avatar>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button>
+          <ion-icon name="call">call</ion-icon>
+        </button>
+        <button ion-button>
+          <ion-icon name="text">call</ion-icon>
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button>
+          <ion-icon name="mail">mail</ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
