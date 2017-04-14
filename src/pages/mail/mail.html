@@ -5,14 +5,21 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <button item-left (click)="dismiss()" style="font-size: 1.2em;">Cancel</button>
-    <i class="fa fa-paper-plane-o" aria-hidden="true" style="float: right;margin-right: 20px;font-size: 1.2em;"></i>
-  </ion-navbar>
-
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">Cancel</button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button style="margin-right: 10px;">
+        <i class="fa fa-paper-plane-o btn" aria-hidden="true"></i>
+      </button>
+      <button ion-button (click)="presentPopover()">
+        <i class="fa fa-ellipsis-h btn" aria-hidden="true" ></i>
+      </button>
+    </ion-buttons>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
-
 
 <ion-content padding>
 

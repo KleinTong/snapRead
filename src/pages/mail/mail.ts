@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController, ActionSheetController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController, ActionSheetController, PopoverController } from 'ionic-angular';
 
+import { PopoverPage } from '../../components/popover-page/popover-page'
 /**
  * Generated class for the Mail page.
  *
@@ -15,7 +16,8 @@ import { IonicPage, NavController, NavParams, ViewController, ActionSheetControl
 export class MailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-   public viewCtrl: ViewController, public actionSheetCtrl: ActionSheetController) {
+   public viewCtrl: ViewController, public actionSheetCtrl: ActionSheetController,
+   public popoverCtrl: PopoverController) {
   }
 
   dismiss() {
@@ -48,8 +50,14 @@ export class MailPage {
     actionSheet.present();
   }
 
+  presentPopover() {
+    let pop = this.popoverCtrl.create(PopoverPage);
+    pop.present();
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad Mail');
   }
 
 }
+
