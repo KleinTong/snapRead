@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, ActionSheetController, ModalController } from 'ionic-angular';
+
+import { ContactPage } from '../contact/contact';
 
 /**
  * Generated class for the ListPage page.
@@ -14,7 +16,9 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
 })
 export class ListPage {
   cherish: string;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+   private toastCtrl: ToastController, public actionSheetCtrl: ActionSheetController,
+   public modalCtrl: ModalController) {
     // this.presentToast();
   }
 
@@ -29,6 +33,46 @@ export class ListPage {
       console.log("toast dismissed");
     });
     toast.present();
+  }
+
+  presentActionSheet() {
+    let actionSheet = this.actionSheetCtrl.create({
+      title: 'action',
+      buttons: [
+        {
+          text: 'add text',
+          role: 'destructive',
+          handler: () => {
+            console.log("des");
+          }
+        },
+        {
+          text: 'save',
+          handler: () => {
+            console.log("des");
+          }
+        },
+        {
+          text: 'add photos',
+          handler: () => {
+            console.log("add photos");
+          }
+        },
+        {
+          text: 'cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log("cancel");
+          }
+        }
+      ]
+    });
+    actionSheet.present();
+  }
+
+  presentProfileModal() {
+    let profileModal = this.modalCtrl.create(ContactPage);
+    profileModal.present();
   }
 
   ionViewDidLoad() {
