@@ -20,7 +20,7 @@ export class ListPage {
 
   presentToast() {
     let toast = this.toastCtrl.create({
-      message: "您的套套已添加进购物车",
+      message: "已删除",
       duration: 1500,
       position: 'bottom',
       // showCloseButton: true,
