@@ -39213,7 +39213,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Version */]
 /* unused harmony reexport MenuType */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_122__components_modal_modal__ = __webpack_require__(160);
 /* unused harmony reexport Modal */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_18__components_modal_modal_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_18__components_modal_modal_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__components_nav_nav__ = __webpack_require__(74);
 /* unused harmony reexport Nav */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__components_nav_nav_pop__ = __webpack_require__(72);
@@ -39292,7 +39292,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Version */]
 /* unused harmony reexport isActivatable */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_158__components_toast_toast__ = __webpack_require__(203);
 /* unused harmony reexport Toast */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_26__components_toast_toast_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_26__components_toast_toast_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_159__components_toggle_toggle__ = __webpack_require__(205);
 /* unused harmony reexport Toggle */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_160__components_toolbar_toolbar_base__ = __webpack_require__(94);
@@ -39335,7 +39335,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Version */]
 /* unused harmony reexport UrlSerializer */
 /* unused harmony reexport DeepLinkConfigToken */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_174__navigation_view_controller__ = __webpack_require__(5);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_174__navigation_view_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_174__navigation_view_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_175__components_action_sheet_action_sheet_component__ = __webpack_require__(51);
 /* unused harmony reexport ActionSheetCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_176__components_alert_alert_component__ = __webpack_require__(53);
@@ -56604,7 +56604,7 @@ exports.isFunction = isFunction;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mail_mail__ = __webpack_require__(311);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -56679,7 +56679,7 @@ var ListPage = (function () {
         actionSheet.present();
     };
     ListPage.prototype.presentProfileModal = function () {
-        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */]);
+        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__mail_mail__["a" /* MailPage */]);
         profileModal.present();
     };
     ListPage.prototype.ionViewDidLoad = function () {
@@ -56692,10 +56692,11 @@ ListPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
         selector: 'page-list-page',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/'<!--\n  Generated template for the ListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>listPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n  <ion-list>\n    <ion-list-header>first</ion-list-header>\n    <ion-item>\n      <ion-label>usa</ion-label>\n      <ion-input type="text" [(ngModel)]="cherish" placeholder="type something" clearInput="true"></ion-input>\n    </ion-item>\n    <ion-item>{{cherish}}</ion-item>\n    <ion-item>\n      <ion-input type="number" max="50" min="0" step="5" value="0"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-avatar item-left>\n        <img src="imgs/pink.jpg" alt="">\n      </ion-avatar>\n      <h1>pink</h1>\n      <button ion-button><p style="color:indianred;">do love pink?</p></button>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header>wechat</ion-list-header>\n    <ion-item-sliding>\n      <ion-item style="height: 80px;">\n        <ion-thumbnail item-left>\n          <img src="imgs/pink.jpg" alt="" style="border-radius: 5px;">\n        </ion-thumbnail>\n        <div>\n          <h2 style="float: left">Karen</h2>\n          <p style="float: right;">yesterday</p>\n        </div>\n        <p style="clear: both;">nice to meet you</p>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button>\n          <ion-icon name="call">call</ion-icon>\n        </button>\n        <button ion-button>\n          <ion-icon name="text">text</ion-icon>\n        </button>\n      </ion-item-options>\n      <ion-item-options side="right">\n        <button ion-button style="background: gray;">Mark as Unread</button>\n        <button ion-button (click)="presentToast()" style="background: red;">\n          <ion-icon name="trash"><span style="margin-left: 8px;">delete</span></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-item-group>\n    <ion-item-divider>breaking new</ion-item-divider>\n    <ion-item>heat not to playoffs</ion-item>\n    <ion-item>bulls goes into playoffs</ion-item>\n  </ion-item-group>\n  <button ion-button (click)="presentActionSheet()">Action Sheet</button>\n  <button ion-button (click)="presentProfileModal()">Modal</button>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ToastController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */]])
 ], ListPage);
 
-var _a, _b, _c, _d, _e;
 //# sourceMappingURL=list-page.js.map
 
 /***/ }),
@@ -78081,7 +78082,11 @@ module.exports = g;
 var map = {
 	"../pages/list-page/list-page.module": [
 		309,
-		0
+		3
+	],
+	"../pages/mail/mail.module": [
+		310,
+		2
 	]
 };
 function webpackAsyncContext(req) {
@@ -78298,8 +78303,9 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_mail_mail__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__ = __webpack_require__(106);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -78307,6 +78313,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -78331,13 +78338,15 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__["a" /* ListPage */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__["a" /* ListPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_mail_mail__["a" /* MailPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/list-page/list-page.module#ListPageModule', name: 'ListPage', segment: 'list-page', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/list-page/list-page.module#ListPageModule', name: 'ListPage', segment: 'list-page', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/mail/mail.module#MailModule', name: 'MailPage', segment: 'mail', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -78348,11 +78357,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__["a" /* ListPage */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__["a" /* ListPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_mail_mail__["a" /* MailPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__["a" /* SplashScreen */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
         ]
     })
@@ -104742,10 +104752,9 @@ ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
         selector: 'page-contact',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      <button ion-button (click)="dismiss()">dismiss</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]])
 ], ContactPage);
 
-var _a, _b;
 //# sourceMappingURL=contact.js.map
 
 /***/ }),
@@ -114404,6 +114413,85 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
+
+/***/ }),
+/* 309 */,
+/* 310 */,
+/* 311 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the Mail page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var MailPage = (function () {
+    function MailPage(navCtrl, navParams, viewCtrl, actionSheetCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.actionSheetCtrl = actionSheetCtrl;
+    }
+    MailPage.prototype.dismiss = function () {
+        var _this = this;
+        // this.viewCtrl.dismiss();
+        var actionSheet = this.actionSheetCtrl.create({
+            title: "Confirmation",
+            buttons: [
+                {
+                    text: 'Save Draft',
+                    handler: function () {
+                    }
+                },
+                {
+                    text: 'Discard Draft',
+                    role: 'destructive',
+                    handler: function () {
+                        _this.viewCtrl.dismiss();
+                    }
+                },
+                {
+                    text: 'Cancel',
+                    role: 'cancel',
+                    handler: function () {
+                        _this.viewCtrl.dismiss();
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    MailPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Mail');
+    };
+    return MailPage;
+}());
+MailPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
+        selector: 'page-mail',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/mail/mail.html"*/'<!--\n  Generated template for the Mail page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button item-left (click)="dismiss()" style="font-size: 1.2em;">Cancel</button>\n    <i class="fa fa-paper-plane-o" aria-hidden="true" style="float: right;margin-right: 20px;font-size: 1.2em;"></i>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/mail/mail.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */]) === "function" && _d || Object])
+], MailPage);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=mail.js.map
 
 /***/ })
 /******/ ]);

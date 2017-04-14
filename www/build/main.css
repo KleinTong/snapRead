@@ -24312,7 +24312,3 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
-
-page-list-page .toast-background {
-  opacity: 0.5;
-}

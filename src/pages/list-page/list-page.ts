@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController, ActionSheetController, ModalController } from 'ionic-angular';
 
 import { ContactPage } from '../contact/contact';
+import { MailPage } from '../mail/mail';
 
 /**
  * Generated class for the ListPage page.
@@ -71,7 +72,7 @@ export class ListPage {
   }
 
   presentProfileModal() {
-    let profileModal = this.modalCtrl.create(ContactPage);
+    let profileModal = this.modalCtrl.create(MailPage);
     profileModal.present();
   }
 
