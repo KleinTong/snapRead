@@ -67,5 +67,10 @@
     <ion-item>bulls goes into playoffs</ion-item>
   </ion-item-group>
   <button ion-button (click)="presentActionSheet()">Action Sheet</button>
-  <button ion-button (click)="presentProfileModal()">Modal</button>
+  <ion-item>
+    <ion-range dualKnobs max="100" min="0" step="5" pin snaps>
+      <ion-label item-left>0</ion-label>
+      <ion-label item-right>100</ion-label>
+    </ion-range>
+  </ion-item>
 </ion-content>

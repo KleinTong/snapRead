@@ -14,7 +14,7 @@ import { PopoverPage } from '../../components/popover-page/popover-page'
   templateUrl: 'mail.html',
 })
 export class MailPage {
-
+  items: number[] = [1, 2, 3, 4];
   constructor(public navCtrl: NavController, public navParams: NavParams,
    public viewCtrl: ViewController, public actionSheetCtrl: ActionSheetController,
    public popoverCtrl: PopoverController) {
