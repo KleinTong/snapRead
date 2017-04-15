@@ -73,4 +73,18 @@
       <ion-label item-right>100</ion-label>
     </ion-range>
   </ion-item>
+  <ion-list radio-group>
+    <ion-item [class.chosen]="choose=='mit'">
+      <ion-label>MIT</ion-label>
+      <ion-radio (ionSelect)="select($event)" value="mit"></ion-radio>
+    </ion-item>
+    <ion-item [class.chosen]="choose=='harvard'">
+      <ion-label>HARVARD</ion-label>
+      <ion-radio (ionSelect)="select($event)" value="harvard"></ion-radio>
+    </ion-item>
+    <ion-item [class.chosen]="choose=='standford'">
+      <ion-label>STANDFORD</ion-label>
+      <ion-radio (ionSelect)="select($event)" value="standford"></ion-radio>
+    </ion-item>
+  </ion-list>
 </ion-content>

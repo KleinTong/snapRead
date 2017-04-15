@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController, ActionSheetController, ModalController } from 'ionic-angular';
 
 import { ContactPage } from '../contact/contact';
@@ -17,9 +17,10 @@ import { MailPage } from '../mail/mail';
 })
 export class ListPage {
   cherish: string;
+  choose: string;
   constructor(public navCtrl: NavController, public navParams: NavParams,
    private toastCtrl: ToastController, public actionSheetCtrl: ActionSheetController,
-   public modalCtrl: ModalController) {
+   public modalCtrl: ModalController, private el: ElementRef) {
     // this.presentToast();
   }
 
@@ -69,6 +70,12 @@ export class ListPage {
       ]
     });
     actionSheet.present();
+  }
+
+  select(e) {
+    // this.el.nativeElement.style.background = "red";
+    // e.target.nativeElement.style.background = "red";
+    this.choose = e;
   }
 
   presentProfileModal() {
