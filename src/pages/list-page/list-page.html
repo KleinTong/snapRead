@@ -7,13 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>listPage</ion-title>
+    <ion-title>WeMock</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="add($event)">
+        <ion-icon name="md-add" style="font-size: 1.5em;"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content no-padding>
+  <ion-toolbar>
+    <ion-searchbar showCancelButton style="text-align: center;"></ion-searchbar>
+  </ion-toolbar>
   <ion-list>
     <ion-list-header>first</ion-list-header>
     <ion-item>
@@ -66,7 +74,10 @@
     <ion-item>heat not to playoffs</ion-item>
     <ion-item>bulls goes into playoffs</ion-item>
   </ion-item-group>
-  <button ion-button (click)="presentActionSheet()">Action Sheet</button>
+  <div class="btnGroup">
+    <button ion-button (click)="presentActionSheet()">Action Sheet</button>
+    <button ion-button (click)="presentProfileModal()">MailPage</button>
+  </div>
   <ion-item>
     <ion-range dualKnobs max="100" min="0" step="5" pin snaps>
       <ion-label item-left>0</ion-label>
@@ -87,4 +98,41 @@
       <ion-radio (ionSelect)="select($event)" value="standford"></ion-radio>
     </ion-item>
   </ion-list>
+  <ion-chip>
+    <button ion-button>
+      <ion-icon name="heart"></ion-icon>
+    </button>    
+    <ion-avatar>
+      <img src="imgs/pink.jpg" alt="">
+    </ion-avatar>
+    <ion-label color="primary">LOL</ion-label>
+  </ion-chip>
+    <div class="share">
+      <div class="imgBox">
+        <img src="" alt="" widht="100" height="100">
+      </div>
+      <div class="imgBox">
+        <img src="" alt="" widht="50" height="50">
+      </div>
+      <div class="imgBox">
+        <img src="" alt="" widht="50" height="50">
+      </div>
+      <div class="imgBox">
+        <img src="" alt="" widht="50" height="50">
+      </div>
+    </div>
+    
+
+  <ion-scroll scrollX="true" style="height: 120px;">
+    <div class="scrollContainer">
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+      <div class="scroll"></div>
+    </div>
+  </ion-scroll>
 </ion-content>

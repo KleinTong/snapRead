@@ -2,4 +2,44 @@ page-list-page {
     .chosen {
         background: #ccff90;
     }
+
+    .btnGroup {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgBox {
+        border: 1px solid black;
+        margin: 2px;
+        height: 200px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .share {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .scrollContainer {
+        width: 1700px;
+        height: auto;
+        box-sizing: border-box;
+        background: pink;
+        padding: 0px;
+    }
+
+    .scroll {
+        height: 100px;
+        width: 200px;
+        margin-right: 5px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        // display: inline-block;
+        float: left;
+    }
+
 }

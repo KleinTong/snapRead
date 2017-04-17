@@ -24316,3 +24316,53 @@ ion-navbar.toolbar {
 page-list-page .chosen {
   background: #ccff90;
 }
+
+page-list-page .btnGroup {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-list-page .imgBox {
+  border: 1px solid black;
+  margin: 2px;
+  height: 200px;
+  width: 100%;
+  display: inline-block;
+}
+
+page-list-page .share {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-list-page .scrollContainer {
+  width: 1700px;
+  height: auto;
+  box-sizing: border-box;
+  background: pink;
+  padding: 0px;
+}
+
+page-list-page .scroll {
+  height: 100px;
+  width: 200px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  float: left;
+}

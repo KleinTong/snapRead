@@ -1,5 +1,6 @@
 import { Component, ElementRef } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, ActionSheetController, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, ActionSheetController,
+   ModalController, PopoverController } from 'ionic-angular';
 
 import { ContactPage } from '../contact/contact';
 import { MailPage } from '../mail/mail';
@@ -20,7 +21,7 @@ export class ListPage {
   choose: string;
   constructor(public navCtrl: NavController, public navParams: NavParams,
    private toastCtrl: ToastController, public actionSheetCtrl: ActionSheetController,
-   public modalCtrl: ModalController, private el: ElementRef) {
+   public modalCtrl: ModalController, private el: ElementRef, private popoverCtrl: PopoverController) {
     // this.presentToast();
   }
 
@@ -81,6 +82,13 @@ export class ListPage {
   presentProfileModal() {
     let profileModal = this.modalCtrl.create(MailPage);
     profileModal.present();
+  }
+
+  add(e) {
+    let pop = this.popoverCtrl.create(MailPage);
+    pop.present({
+      ev: e
+    });
   }
 
   ionViewDidLoad() {
