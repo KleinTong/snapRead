@@ -10,8 +10,6 @@ import { ContactPage } from '../contact/contact';
 })
 export class HomePage {
   items: number[] =[];
-  @ViewChild('search')
-  searchbar: Searchbar;
   picArr: string[] = ['imgs/borealis.jpg', 'imgs/flowers_dribbble.jpg','imgs/blue.jpg',
      'imgs/pink.jpg', 'imgs/prop.jpg', 'imgs/fish.jpg'];
   constructor(public navCtrl: NavController, private popoverCtrl: PopoverController,
@@ -23,12 +21,6 @@ export class HomePage {
       //     this.searchbar.setFocus();
       // }, 100);
   }
-
- ngAfterViewInit() {
-      setTimeout(() => {
-        this.searchbar.setFocus();
-   }, 1000);
- }
 
   add(e) {
     let pop = this.popoverCtrl.create(AddPage);

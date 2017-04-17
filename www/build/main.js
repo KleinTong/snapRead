@@ -33742,7 +33742,7 @@ function UIEventManager_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__components_click_block_click_block__ = __webpack_require__(130);
 /* unused harmony reexport ClickBlock */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_content_content__ = __webpack_require__(21);
-/* unused harmony reexport Content */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_92__components_content_content__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_datetime_datetime__ = __webpack_require__(133);
 /* unused harmony reexport DateTime */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_fab_fab__ = __webpack_require__(42);
@@ -33910,7 +33910,7 @@ function UIEventManager_tsickle_Closure_declarations() {
 /* unused harmony reexport setupConfig */
 /* unused harmony reexport ConfigToken */
 /* unused harmony reexport DomController */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_22__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_22__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* unused harmony reexport Haptic */
 /* unused harmony reexport DeepLinker */
@@ -57537,12 +57537,6 @@ var HomePage = (function () {
         //     this.searchbar.setFocus();
         // }, 100);
     }
-    HomePage.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        setTimeout(function () {
-            _this.searchbar.setFocus();
-        }, 1000);
-    };
     HomePage.prototype.add = function (e) {
         var pop = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_2__add_page_add_page__["a" /* AddPage */]);
         pop.present({
@@ -57570,13 +57564,9 @@ var HomePage = (function () {
     };
     return HomePage;
 }());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* ViewChild */])('search'),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Searchbar */])
-], HomePage.prototype, "searchbar", void 0);
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title style="font-size: 1.5em;">WeMock</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="add($event)">\n        <ion-icon name="md-add" style="font-size: 1.5em;color:white;"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n  <ion-toolbar style="position:relative;">\n    <ion-searchbar #search showCancelButton ></ion-searchbar>\n    <div style="position: absolute; top:0px;bottom:0px;left:0px;right:0px;background: transparent;z-index:100;" \n      (click)="presentProfileModal()"></div>\n  </ion-toolbar>\n  <ion-list no-padding>\n    <!--<ion-list-header>wechat</ion-list-header>-->\n    <ion-item-sliding *ngFor="let item of items" no-padding>\n      <ion-item style="height: 65px;">\n        <ion-thumbnail item-left>\n          <img [src]="randomPic()" alt="" style="border-radius: 5px;">\n        </ion-thumbnail>\n        <div>\n          <h2 style="float: left;font-size: 1.2em;">Karen</h2>\n          <p style="float: right;">yesterday</p>\n        </div>\n        <p style="clear: both;">nice to meet you</p>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button>\n          <ion-icon name="call">call</ion-icon>\n        </button>\n        <button ion-button>\n          <ion-icon name="text">text</ion-icon>\n        </button>\n      </ion-item-options>\n      <ion-item-options side="right">\n        <button ion-button style="background: gray;">Mark as Unread</button>\n        <button ion-button (click)="presentToast()" style="background: red;">\n          <ion-icon name="trash"><span style="margin-left: 8px;">delete</span></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title style="font-size: 1.5em;">WeMock</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="add($event)">\n        <ion-icon name="md-add" style="font-size: 1.5em;color:white;"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n  <ion-toolbar style="position:relative;">\n    <ion-searchbar showCancelButton ></ion-searchbar>\n    <div style="position: absolute; top:0px;bottom:0px;left:0px;right:0px;background: transparent;z-index:100;" \n      (click)="presentProfileModal()"></div>\n  </ion-toolbar>\n  <ion-list no-padding>\n    <!--<ion-list-header>wechat</ion-list-header>-->\n    <ion-item-sliding *ngFor="let item of items" no-padding>\n      <ion-item style="height: 65px;">\n        <ion-thumbnail item-left>\n          <img [src]="randomPic()" alt="" style="border-radius: 5px;">\n        </ion-thumbnail>\n        <div>\n          <h2 style="float: left;font-size: 1.2em;">Karen</h2>\n          <p style="float: right;">yesterday</p>\n        </div>\n        <p style="clear: both;">nice to meet you</p>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button>\n          <ion-icon name="call">call</ion-icon>\n        </button>\n        <button ion-button>\n          <ion-icon name="text">text</ion-icon>\n        </button>\n      </ion-item-options>\n      <ion-item-options side="right">\n        <button ion-button style="background: gray;">Mark as Unread</button>\n        <button ion-button (click)="presentToast()" style="background: red;">\n          <ion-icon name="trash"><span style="margin-left: 8px;">delete</span></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* PopoverController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
@@ -57616,7 +57606,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="List" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/tabs/tabs.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="chatbubbles"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="List" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -104923,7 +104913,7 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
@@ -104952,18 +104942,39 @@ var ContactPage = (function () {
         this.navCtrl = navCtrl;
         this.viewCtrl = viewCtrl;
     }
+    //  ionViewDidEnter() {
+    //       setTimeout(() => {
+    //         this.searchbar.setFocus();
+    //       });
+    //  }
+    ContactPage.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.searchbar.setFocus();
+        setTimeout(function () {
+            _this.content.scrollToTop();
+        }, 1000);
+    };
     ContactPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
     return ContactPage;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* ViewChild */])('search'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Searchbar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Searchbar */]) === "function" && _a || Object)
+], ContactPage.prototype, "searchbar", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Content */]),
+    __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Content */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Content */]) === "function" && _b || Object)
+], ContactPage.prototype, "content", void 0);
 ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-searchbar showCancelButton ></ion-searchbar>\n    <ion-buttons end>\n      <button (click)="dismiss()" style="font-size: 1.2em;padding-left: 0px;color: limegreen">Cancel</button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content (click)="dismiss()">\n  \n</ion-content>'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-searchbar #search ></ion-searchbar>\n    <ion-buttons end>\n      <button (click)="dismiss()" style="font-size: 1.2em;padding-left: 0px;color: limegreen">Cancel</button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content (click)="dismiss()">\n  \n</ion-content>'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]) === "function" && _d || Object])
 ], ContactPage);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=contact.js.map
 
 /***/ }),
