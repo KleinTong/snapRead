@@ -14,4 +14,5 @@ export class ContactPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
 }

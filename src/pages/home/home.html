@@ -1,8 +1,47 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title style="font-size: 1.5em;">WeMock</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="add($event)">
+        <ion-icon name="md-add" style="font-size: 1.5em;color:white;"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content no-padding>
+  <ion-toolbar style="position:relative;">
+    <ion-searchbar #search showCancelButton ></ion-searchbar>
+    <div style="position: absolute; top:0px;bottom:0px;left:0px;right:0px;background: transparent;z-index:100;" 
+      (click)="presentProfileModal()"></div>
+  </ion-toolbar>
+  <ion-list no-padding>
+    <!--<ion-list-header>wechat</ion-list-header>-->
+    <ion-item-sliding *ngFor="let item of items" no-padding>
+      <ion-item style="height: 65px;">
+        <ion-thumbnail item-left>
+          <img [src]="randomPic()" alt="" style="border-radius: 5px;">
+        </ion-thumbnail>
+        <div>
+          <h2 style="float: left;font-size: 1.2em;">Karen</h2>
+          <p style="float: right;">yesterday</p>
+        </div>
+        <p style="clear: both;">nice to meet you</p>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button>
+          <ion-icon name="call">call</ion-icon>
+        </button>
+        <button ion-button>
+          <ion-icon name="text">text</ion-icon>
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button style="background: gray;">Mark as Unread</button>
+        <button ion-button (click)="presentToast()" style="background: red;">
+          <ion-icon name="trash"><span style="margin-left: 8px;">delete</span></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

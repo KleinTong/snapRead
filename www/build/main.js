@@ -33850,7 +33850,7 @@ function UIEventManager_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_142__components_scroll_scroll__ = __webpack_require__(182);
 /* unused harmony reexport Scroll */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_143__components_searchbar_searchbar__ = __webpack_require__(184);
-/* unused harmony reexport Searchbar */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_143__components_searchbar_searchbar__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_144__components_segment_segment__ = __webpack_require__(186);
 /* unused harmony reexport Segment */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_145__components_segment_segment_button__ = __webpack_require__(84);
@@ -33910,25 +33910,25 @@ function UIEventManager_tsickle_Closure_declarations() {
 /* unused harmony reexport setupConfig */
 /* unused harmony reexport ConfigToken */
 /* unused harmony reexport DomController */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_22__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_22__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* unused harmony reexport Haptic */
 /* unused harmony reexport DeepLinker */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_169__navigation_ionic_page__ = __webpack_require__(276);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_169__navigation_ionic_page__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_169__navigation_ionic_page__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_170__navigation_nav_controller__ = __webpack_require__(19);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_170__navigation_nav_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_170__navigation_nav_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_171__navigation_nav_controller_base__ = __webpack_require__(48);
 /* unused harmony reexport NavControllerBase */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_172__navigation_nav_params__ = __webpack_require__(20);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_172__navigation_nav_params__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_172__navigation_nav_params__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_173__navigation_nav_util__ = __webpack_require__(26);
 /* unused harmony reexport DeepLinkMetadata */
 /* unused harmony reexport DeepLinkMetadataFactory */
 /* unused harmony reexport UrlSerializer */
 /* unused harmony reexport DeepLinkConfigToken */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_174__navigation_view_controller__ = __webpack_require__(5);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_174__navigation_view_controller__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_174__navigation_view_controller__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_175__components_action_sheet_action_sheet_component__ = __webpack_require__(51);
 /* unused harmony reexport ActionSheetCmp */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_176__components_alert_alert_component__ = __webpack_require__(53);
@@ -56701,11 +56701,11 @@ var ListPage = (function () {
     return ListPage;
 }());
 ListPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
         selector: 'page-list-page',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/'<!--\n  Generated template for the ListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>WeMock</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="add($event)">\n        <ion-icon name="md-add" style="font-size: 1.5em;"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n  <ion-toolbar>\n    <ion-searchbar showCancelButton style="text-align: center;"></ion-searchbar>\n  </ion-toolbar>\n  <ion-list>\n    <ion-list-header>first</ion-list-header>\n    <ion-item>\n      <ion-label>usa</ion-label>\n      <ion-input type="text" [(ngModel)]="cherish" placeholder="type something" clearInput="true"></ion-input>\n    </ion-item>\n    <ion-item>{{cherish}}</ion-item>\n    <ion-item>\n      <ion-input type="number" max="50" min="0" step="5" value="0"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-avatar item-left>\n        <img src="imgs/pink.jpg" alt="">\n      </ion-avatar>\n      <h1>pink</h1>\n      <button ion-button><p style="color:indianred;">do love pink?</p></button>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header>wechat</ion-list-header>\n    <ion-item-sliding>\n      <ion-item style="height: 80px;">\n        <ion-thumbnail item-left>\n          <img src="imgs/pink.jpg" alt="" style="border-radius: 5px;">\n        </ion-thumbnail>\n        <div>\n          <h2 style="float: left">Karen</h2>\n          <p style="float: right;">yesterday</p>\n        </div>\n        <p style="clear: both;">nice to meet you</p>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button>\n          <ion-icon name="call">call</ion-icon>\n        </button>\n        <button ion-button>\n          <ion-icon name="text">text</ion-icon>\n        </button>\n      </ion-item-options>\n      <ion-item-options side="right">\n        <button ion-button style="background: gray;">Mark as Unread</button>\n        <button ion-button (click)="presentToast()" style="background: red;">\n          <ion-icon name="trash"><span style="margin-left: 8px;">delete</span></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-item-group>\n    <ion-item-divider>breaking new</ion-item-divider>\n    <ion-item>heat not to playoffs</ion-item>\n    <ion-item>bulls goes into playoffs</ion-item>\n  </ion-item-group>\n  <div class="btnGroup">\n    <button ion-button (click)="presentActionSheet()">Action Sheet</button>\n    <button ion-button (click)="presentProfileModal()">MailPage</button>\n  </div>\n  <ion-item>\n    <ion-range dualKnobs max="100" min="0" step="5" pin snaps>\n      <ion-label item-left>0</ion-label>\n      <ion-label item-right>100</ion-label>\n    </ion-range>\n  </ion-item>\n  <ion-list radio-group>\n    <ion-item [class.chosen]="choose==\'mit\'">\n      <ion-label>MIT</ion-label>\n      <ion-radio (ionSelect)="select($event)" value="mit"></ion-radio>\n    </ion-item>\n    <ion-item [class.chosen]="choose==\'harvard\'">\n      <ion-label>HARVARD</ion-label>\n      <ion-radio (ionSelect)="select($event)" value="harvard"></ion-radio>\n    </ion-item>\n    <ion-item [class.chosen]="choose==\'standford\'">\n      <ion-label>STANDFORD</ion-label>\n      <ion-radio (ionSelect)="select($event)" value="standford"></ion-radio>\n    </ion-item>\n  </ion-list>\n  <ion-chip>\n    <button ion-button>\n      <ion-icon name="heart"></ion-icon>\n    </button>    \n    <ion-avatar>\n      <img src="imgs/pink.jpg" alt="">\n    </ion-avatar>\n    <ion-label color="primary">LOL</ion-label>\n  </ion-chip>\n    <div class="share">\n      <div class="imgBox">\n        <img src="" alt="" widht="100" height="100">\n      </div>\n      <div class="imgBox">\n        <img src="" alt="" widht="50" height="50">\n      </div>\n      <div class="imgBox">\n        <img src="" alt="" widht="50" height="50">\n      </div>\n      <div class="imgBox">\n        <img src="" alt="" widht="50" height="50">\n      </div>\n    </div>\n    \n\n  <ion-scroll scrollX="true" style="height: 120px;">\n    <div class="scrollContainer">\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n      <div class="scroll"></div>\n    </div>\n  </ion-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/list-page/list-page.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* PopoverController */]])
 ], ListPage);
@@ -56787,12 +56787,12 @@ var MailPage = (function () {
     return MailPage;
 }());
 MailPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
         selector: 'page-mail',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/mail/mail.html"*/'<!--\n  Generated template for the Mail page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">Cancel</button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button style="margin-right: 10px;">\n        <i class="fa fa-paper-plane-o btn" aria-hidden="true"></i>\n      </button>\n      <button ion-button (click)="presentPopover()">\n        <i class="fa fa-ellipsis-h btn" aria-hidden="true" ></i>\n      </button>\n    </ion-buttons>\n    <ion-searchbar></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label>choose time</ion-label>\n    <ion-datetime displayFormat="DD/Z"></ion-datetime>\n  </ion-item>\n  <ion-item>\n    <ion-label>date picker</ion-label>\n    <ion-datetime pickerFormat="MMMM YYYY"></ion-datetime>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/mail/mail.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */],
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ActionSheetController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* PopoverController */]])
 ], MailPage);
 
@@ -57459,7 +57459,7 @@ PopoverPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
         selector: 'popover-page',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/components/popover-page/popover-page.html"*/'<!-- Generated template for the PopoverPage component -->\n<ion-list>\n  <ion-list-header>Ionic</ion-list-header>\n  <button ion-item (click)="close()">Learn Ionic</button>\n  <button ion-item (click)="close()">Documentation</button>\n  <button ion-item (click)="close()">Showcase</button>\n  <button ion-item (click)="close()">GitHub Repo</button>\n</ion-list>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/components/popover-page/popover-page.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ViewController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]])
 ], PopoverPage);
 
 //# sourceMappingURL=popover-page.js.map
@@ -57493,7 +57493,7 @@ AboutPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
         selector: 'page-about',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/about/about.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], AboutPage);
 
 //# sourceMappingURL=about.js.map
@@ -57505,6 +57505,8 @@ AboutPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_page_add_page__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact__ = __webpack_require__(251);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -57517,17 +57519,67 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var HomePage = (function () {
-    function HomePage(navCtrl) {
+    function HomePage(navCtrl, popoverCtrl, toastCtrl, modalCtrl) {
         this.navCtrl = navCtrl;
+        this.popoverCtrl = popoverCtrl;
+        this.toastCtrl = toastCtrl;
+        this.modalCtrl = modalCtrl;
+        this.items = [];
+        this.picArr = ['imgs/borealis.jpg', 'imgs/flowers_dribbble.jpg', 'imgs/blue.jpg',
+            'imgs/pink.jpg', 'imgs/prop.jpg', 'imgs/fish.jpg'];
+        for (var i = 0; i < 30; i++) {
+            this.items.push(1);
+        }
+        // setTimeout(() => {
+        //     this.searchbar.setFocus();
+        // }, 100);
     }
+    HomePage.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        setTimeout(function () {
+            _this.searchbar.setFocus();
+        }, 1000);
+    };
+    HomePage.prototype.add = function (e) {
+        var pop = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_2__add_page_add_page__["a" /* AddPage */]);
+        pop.present({
+            ev: e
+        });
+    };
+    HomePage.prototype.presentToast = function () {
+        var toast = this.toastCtrl.create({
+            message: "已删除",
+            duration: 1500,
+            position: 'bottom',
+        });
+        toast.onDidDismiss(function () {
+            console.log("toast dismissed");
+        });
+        toast.present();
+    };
+    HomePage.prototype.randomPic = function () {
+        var num = Math.floor(Math.random() * this.picArr.length);
+        return this.picArr[num];
+    };
+    HomePage.prototype.presentProfileModal = function () {
+        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__contact_contact__["a" /* ContactPage */]);
+        profileModal.present();
+    };
     return HomePage;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* ViewChild */])('search'),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Searchbar */])
+], HomePage.prototype, "searchbar", void 0);
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title style="font-size: 1.5em;">WeMock</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="add($event)">\n        <ion-icon name="md-add" style="font-size: 1.5em;color:white;"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n  <ion-toolbar style="position:relative;">\n    <ion-searchbar #search showCancelButton ></ion-searchbar>\n    <div style="position: absolute; top:0px;bottom:0px;left:0px;right:0px;background: transparent;z-index:100;" \n      (click)="presentProfileModal()"></div>\n  </ion-toolbar>\n  <ion-list no-padding>\n    <!--<ion-list-header>wechat</ion-list-header>-->\n    <ion-item-sliding *ngFor="let item of items" no-padding>\n      <ion-item style="height: 65px;">\n        <ion-thumbnail item-left>\n          <img [src]="randomPic()" alt="" style="border-radius: 5px;">\n        </ion-thumbnail>\n        <div>\n          <h2 style="float: left;font-size: 1.2em;">Karen</h2>\n          <p style="float: right;">yesterday</p>\n        </div>\n        <p style="clear: both;">nice to meet you</p>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button>\n          <ion-icon name="call">call</ion-icon>\n        </button>\n        <button ion-button>\n          <ion-icon name="text">text</ion-icon>\n        </button>\n      </ion-item-options>\n      <ion-item-options side="right">\n        <button ion-button style="background: gray;">Mark as Unread</button>\n        <button ion-button (click)="presentToast()" style="background: red;">\n          <ion-icon name="trash"><span style="margin-left: 8px;">delete</span></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* PopoverController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
 ], HomePage);
 
 //# sourceMappingURL=home.js.map
@@ -78222,13 +78274,17 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/add-page/add-page.module": [
+		314,
+		5
+	],
 	"../pages/list-page/list-page.module": [
 		311,
-		1
+		4
 	],
 	"../pages/mail/mail.module": [
 		312,
-		0
+		3
 	]
 };
 function webpackAsyncContext(req) {
@@ -78446,9 +78502,10 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_mail_mail__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_popover_page_popover_page__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_add_page_add_page__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_popover_page_popover_page__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(107);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -78461,6 +78518,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 //pages
+
 
 
 
@@ -78486,14 +78544,16 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__["a" /* ListPage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_mail_mail__["a" /* MailPage */],
-            __WEBPACK_IMPORTED_MODULE_10__components_popover_page_popover_page__["a" /* PopoverPage */]
+            __WEBPACK_IMPORTED_MODULE_11__components_popover_page_popover_page__["a" /* PopoverPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_add_page_add_page__["a" /* AddPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/mail/mail.module#MailModule', name: 'MailPage', segment: 'mail', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/list-page/list-page.module#ListPageModule', name: 'ListPage', segment: 'list-page', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/list-page/list-page.module#ListPageModule', name: 'ListPage', segment: 'list-page', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/add-page/add-page.module#AddPageModule', name: 'AddPage', segment: 'add-page', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -78506,11 +78566,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_list_page_list_page__["a" /* ListPage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_mail_mail__["a" /* MailPage */],
-            __WEBPACK_IMPORTED_MODULE_10__components_popover_page_popover_page__["a" /* PopoverPage */]
+            __WEBPACK_IMPORTED_MODULE_11__components_popover_page_popover_page__["a" /* PopoverPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_add_page_add_page__["a" /* AddPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__["a" /* SplashScreen */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
         ]
     })
@@ -104862,7 +104923,7 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
@@ -104898,9 +104959,9 @@ var ContactPage = (function () {
 }());
 ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      <button ion-button (click)="dismiss()">dismiss</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-toolbar>\n    <ion-searchbar showCancelButton ></ion-searchbar>\n    <ion-buttons end>\n      <button (click)="dismiss()" style="font-size: 1.2em;padding-left: 0px;color: limegreen">Cancel</button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content (click)="dismiss()">\n  \n</ion-content>'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/contact/contact.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ViewController */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ViewController */]])
 ], ContactPage);
 
 //# sourceMappingURL=contact.js.map
@@ -114561,6 +114622,53 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
+
+/***/ }),
+/* 311 */,
+/* 312 */,
+/* 313 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AddPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var AddPage = (function () {
+    function AddPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AddPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AddPage');
+    };
+    return AddPage;
+}());
+AddPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({
+        selector: 'page-add-page',template:/*ion-inline-start:"/Users/donsee/projects/snapRead/src/pages/add-page/add-page.html"*/'<!--\n  Generated template for the AddPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--<ion-header>\n\n  <ion-navbar>\n    <ion-title>addPage</ion-title>\n  </ion-navbar>\n\n</ion-header>-->\n\n\n<ion-content no-padding>\n  <ion-item>\n    <i class="fa fa-comment" aria-hidden="true"></i>\n    <span>New Chat</span>\n  </ion-item>\n  <ion-item>\n    <i class="fa fa-user-plus" aria-hidden="true"></i>\n    <span>Add Contacts</span>\n  </ion-item>\n  <ion-item>\n    <i class="fa fa-qrcode" aria-hidden="true"></i>\n    <span>Scan QR Code</span>\n  </ion-item>\n  <ion-item>\n    <i class="fa fa-money" aria-hidden="true"></i>\n    <span>Money</span>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/donsee/projects/snapRead/src/pages/add-page/add-page.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+], AddPage);
+
+//# sourceMappingURL=add-page.js.map
 
 /***/ })
 /******/ ]);

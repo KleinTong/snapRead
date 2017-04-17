@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ListPage } from '../pages/list-page/list-page';
 import { MailPage } from '../pages/mail/mail';
+import { AddPage } from '../pages/add-page/add-page';
 
 //components
 import { PopoverPage } from '../components/popover-page/popover-page';
@@ -26,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     ListPage,
     MailPage,
-    PopoverPage
+    PopoverPage,
+    AddPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     ListPage,
     MailPage,
-    PopoverPage
+    PopoverPage,
+    AddPage
   ],
   providers: [
     StatusBar,

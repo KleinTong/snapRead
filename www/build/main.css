@@ -12923,14 +12923,14 @@ ion-item-sliding.active-swipe-left button[expandable] {
 }
 
 .item-ios ion-thumbnail {
-  min-width: 56px;
-  min-height: 56px;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .item-ios ion-thumbnail ion-img,
 .item-ios ion-thumbnail img {
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
 }
 
 .item-ios[detail-push] .item-inner,
@@ -13935,7 +13935,7 @@ ion-list[inset] {
 }
 
 .list-ios[inset] {
-  margin: 16px 16px 16px 16px;
+  margin: 3px 16px 16px 16px;
   border-radius: 4px;
 }
 
@@ -19863,10 +19863,10 @@ ion-navbar.toolbar {
 }
 
 .toolbar-title-ios {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: white;
   pointer-events: auto;
 }
 
@@ -24311,6 +24311,10 @@ ion-navbar.toolbar {
   .wp .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content {
     padding-top: calc(16px + 20px);
   }
+}
+
+page-home ion-navbar .toolbar-background {
+  background: navy;
 }
 
 page-list-page .chosen {
